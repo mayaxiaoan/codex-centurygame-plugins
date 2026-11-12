@@ -10,7 +10,7 @@
         "source": "git-subdir",
         "url": "https://github.com/mayaxiaoan/codex-reset-card-reminder-windows.git",
         "path": "./codex-reset-guard-creator",
-        "sha": "2ed2a5ef3a2200f3de6af364caf68089413590bd"
+        "sha": "18b6eeb8d0d4469c4da273dcaa0f29838bb9c9b8"
       },
       "policy": {
         "installation": "AVAILABLE",
