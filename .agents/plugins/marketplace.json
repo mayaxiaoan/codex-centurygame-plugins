@@ -1,0 +1,22 @@
+{
+  "name": "reset-guard-creator-local",
+  "interface": {
+    "displayName": "CenturyGame班用插件"
+  },
+  "plugins": [
+    {
+      "name": "codex-reset-guard-creator",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/mayaxiaoan/codex-reset-card-reminder-windows.git",
+        "path": "./codex-reset-guard-creator",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
