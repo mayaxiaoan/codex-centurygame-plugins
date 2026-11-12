@@ -1,2 +1,29 @@
-# codex-centurygame-plugins
-CenturyGame班用插件：轻量 Codex 插件市场目录，供同事共享与测试。
+# CenturyGame班用插件
+
+供同事共享和测试的 Codex 插件市场。此仓库只保存轻量目录和说明；安装具体插件时才获取对应插件仓库。
+
+## 添加市场
+
+在 Codex 的“插件 → 添加 → 添加插件市场”填写：
+
+- 来源：`https://github.com/mayaxiaoan/codex-centurygame-plugins.git`
+- Git 引用：`main` 或留空。
+- 稀疏路径：留空。本仓库不包含大体积运行环境。
+
+添加后选择“CenturyGame班用插件”，安装所需插件，并按提示重启 Codex。
+
+## 插件目录
+
+| 插件 | 平台 | 功能与安装内容 |
+| --- | --- | --- |
+| [重置卡防过期提醒](https://github.com/mayaxiaoan/codex-reset-card-reminder-windows) | Windows x64 | 按剩余时长通知、可选自动使用；内置 Node.js；使用系统通知组件，无需安装现代 .NET。 |
+
+## 从旧市场迁移
+
+先移除指向 codex-reset-card-reminder 的旧市场来源，再添加本仓库。重置卡插件内部身份保持不变，可原位升级并保留数据。这个市场的内部名称暂保留 reset-guard-creator-local，以兼容已有安装；界面显示名为“CenturyGame班用插件”。
+
+## 提交其他插件
+
+每个插件使用独立、稳定的内部名称，在自己的仓库维护源码、运行内容、说明和版本。在 .agents/plugins/marketplace.json 的 plugins 数组增加目录条目，source 使用 url（插件在仓库根目录）或 git-subdir（插件在子目录），指定来源 URL、ref 和必要的 path。
+请始终提供 installation、authentication 与 category；不要修改已有插件的内部名称。提供支持平台、权限、依赖、测试结果和隐私说明，通过 Pull Request 更新目录。
+本目录及其引用仓库公开可读，不得提交账号凭证、个人状态、内部秘密或未获授权的公司资料。公开仓库不是访问控制；仅供当前共享测试，未通过官方公开插件目录审核。
