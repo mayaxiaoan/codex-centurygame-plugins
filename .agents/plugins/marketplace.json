@@ -10,13 +10,25 @@
         "source": "git-subdir",
         "url": "https://github.com/mayaxiaoan/codex-reset-card-reminder-windows.git",
         "path": "./codex-reset-guard-creator",
-        "sha": "18b6eeb8d0d4469c4da273dcaa0f29838bb9c9b8"
+        "sha": "b1b607612439d32d24b02f6f708dae430657fd80"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Productivity"
+      "category": "Productivity",
+      "interface": {
+        "displayName": "重置卡防过期提醒",
+        "shortDescription": "自选时长提醒到期、自动使用重置卡",
+        "longDescription": "当前安装包仅支持 Windows x64，暂不支持 macOS。内置 Node.js，通知通过 Windows 自带组件实现，无需安装 Node.js 或现代 .NET，不影响电脑已有版本。分别选择通知和自动使用的剩余时长：24、12、6、3、1小时或永不。默认不足12小时通知，永不自动使用。同次打开同一卡片、同一时长只提醒一次；真正重开或选择新阈值可再提醒，后台重启和切回已提醒时长不重复。自动使用成功后停止提醒。正式页面只保留设置、卡片与到期提醒。",
+        "developerName": "Personal Tools",
+        "websiteURL": "https://github.com/mayaxiaoan/codex-reset-card-reminder-windows",
+        "defaultPrompt": [
+          "打开重置卡防过期提醒",
+          "查看重置卡到期与自动使用计划",
+          "设置重置卡不足12小时时通知我"
+        ]
+      }
     }
   ]
 }
